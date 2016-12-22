@@ -2,5 +2,5 @@
 
 
 This is a demo
-# use angular-chart directive to show the chart
-# based on html5 chart.js
+1 use angular-chart directive to show the chart
+2 based on html5 chart.js
