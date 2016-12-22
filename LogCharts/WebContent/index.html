@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app="logChartApp">
+<head>
+<meta charset="UTF-8">
+<title>LogCharts</title>
+<style>
+	select {
+		font-size: 18px;
+	}
+	.header {
+		text-align: center;
+	}
+	canvas {
+		background-color: #FFFFE0;
+	}
+</style>
+</head>
+<body data-ng-controller="serviceController">
+<div class="header">
+	<h2>Performance Statistics View</h2>
+	<select data-ng-change="selectedCmdName();" data-ng-model="selectedCmd">
+		<option value="">please select service</option>
+		<option ng-repeat="name in cmdNameList track by $index" ng-value="$index">
+	   		{{name}}
+		 </option>
+	</select>
+</div>
+ <div>The Service Request times is : {{requestTimes}} times</div>
+<canvas class="chart chart-bar" chart-data="data" chart-labels="labels" chart-colors="colors"
+    chart-series="series" chart-click="onClick"></canvas>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="../node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

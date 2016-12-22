@@ -1,0 +1,16 @@
+{
+  "name": "logCharts.js",
+  "description": "Simple app using HTML5 charts.js to show log",
+  "version": "0.01",
+  "devDependencies": {
+    "requirejs": "^2.2.0"
+  },
+  "dependencies": {
+    "angular": "1.x",
+    "angular-chart.js": "^1.1.1",
+    "chart.js": "^2.4.0",
+    "chartjs-color": "^2.0.0",
+    "moment": "^2.10.6",
+    "require.js": "^1.0.0"
+  }
+}
